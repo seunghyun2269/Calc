@@ -17,13 +17,13 @@ def result(request):
     opt = request.GET['opt']
 
     if opt == "+":
-        result = num1 + num2
+        result = round(num1 + num2, 2)
     elif opt == "-":
-        result = num1 - num2
+        result = round(num1 - num2, 2)
     elif opt == "*":
-        result = num1 * num2
+        result = round(num1 * num2, 2)
     elif opt == "/":
-        result = num1 / num2
+        result = round(num1 / num2, 2)
 
     calcResult = str(num1) + " " + opt + " " + str(num2) + " = " + str(result)
 
