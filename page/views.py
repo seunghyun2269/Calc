@@ -12,8 +12,8 @@ def submit(request):
 
 
 def result(request):
-    num1 = int(request.GET['num1'])
-    num2 = int(request.GET['num2'])
+    num1 = float(request.GET['num1'])
+    num2 = float(request.GET['num2'])
     opt = request.GET['opt']
 
     if opt == "+":
